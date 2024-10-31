@@ -283,6 +283,7 @@ GameObject:
   - component: {fileID: 1188628717}
   - component: {fileID: 1188628716}
   - component: {fileID: 1188628719}
+  - component: {fileID: 1188628720}
   m_Layer: 0
   m_Name: Player Sprites_0
   m_TagString: Untagged
@@ -397,6 +398,29 @@ MonoBehaviour:
   rotationSpeed: 60
   aimMode: 0
   movementMode: 2
+--- !u!114 &1188628720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188628715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52c9a4613bbc6ce4b809b21678067793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teamId: 0
+  defaultHealth: 1
+  maximumHealth: 1
+  currentHealth: 1
+  invincibilityTime: 3
+  isAlwaysInvincible: 0
+  useLives: 1
+  currentLives: 3
+  maximumLives: 5
+  deathEffect: {fileID: 6218169049356006189, guid: 68794701c80057447857bb433e54c579, type: 3}
+  hitEffect: {fileID: 5156419567158778961, guid: d35295653acdbe24081a5caee3d9c353, type: 3}
 --- !u!1 &1293597733
 GameObject:
   m_ObjectHideFlags: 0
