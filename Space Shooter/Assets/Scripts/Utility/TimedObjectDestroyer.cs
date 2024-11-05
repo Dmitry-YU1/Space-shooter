@@ -7,6 +7,8 @@ using UnityEngine;
 /// </summary>
 public class TimedObjectDestroyer : MonoBehaviour
 {
+
+  
     [Tooltip("The lifetime of this gameobject")]
     public float lifetime = 5.0f;
 

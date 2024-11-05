@@ -8,6 +8,7 @@ using UnityEngine.InputSystem;
 /// </summary>
 public class ShootingController : MonoBehaviour
 {
+    public Transform Parent;
     [Header("GameObject/Component References")]
     [Tooltip("The projectile to be fired.")]
     public GameObject projectilePrefab = null;
@@ -123,7 +124,10 @@ public class ShootingController : MonoBehaviour
 
             if (fireEffect != null)
             {
-                Instantiate(fireEffect, transform.position, transform.rotation, null);
+                
+                GameObject audioEffect = Instantiate(fireEffect, transform.position, transform.rotation, null);
+                audioEffect.transform.SetParent(Parent);
+
             }
 
             // Restart the cooldown
@@ -156,6 +160,7 @@ public class ShootingController : MonoBehaviour
             if (projectileHolder != null)
             {
                 projectileGameObject.transform.SetParent(projectileHolder);
+                Debug.Log(projectileGameObject.transform.parent.name);
             }
         }
     }
